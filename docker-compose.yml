@@ -1,0 +1,7 @@
+version: '3'
+services:
+    docker-notify:
+        image: schlabbi/docker-notify
+        restart: always
+        volumes:
+            - $CONFIG_DIR:/usr/src/app/config

@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.vscode/
+.history/
+coverage/
+
+*.log
+*.local
+
+.DS_Store
+.env
+config/cache.json

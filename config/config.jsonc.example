@@ -1,0 +1,45 @@
+{
+    "dockerHubUsername": "example",
+    "dockerHubPassword": "123e4567-e89b-12d3-a456-426614174000",
+    "checkInterval": 60,
+    "notifyServices": [
+        {
+            "image": "nextcloud:fpm",
+            "actions": [
+                {
+                    "type": "mailHook",
+                    "instance": "generalMail",
+                    "recipient": "info@example.org"
+                }
+            ]
+        },
+        {
+            "image": "gitlab/gitlab-ce:latest",
+            "actions": [
+                {
+                    "type": "webHook",
+                    "instance": "gitlabHook"
+                }
+            ]
+        }
+    ],
+    "smtpServer": {
+        "generalMail": {
+            "host": "mail.example.org",
+            "port": 25,
+            "username": "docker-notify@example.org",
+            "password": "PASSWORD",
+            "sendername": "Docker-Notify",
+            "senderadress": "docker-notify@example.org"
+        }
+    },
+    "webHooks": {
+        "gitlabHook": {
+            "reqUrl": "https://ci.example.org",
+            "httpMethod": "POST",
+            "httpBody": {
+                "message": "$msg"
+            }
+        }
+    }
+}
