@@ -31,8 +31,8 @@ importers:
         specifier: ^25.2.0
         version: 25.2.0
       '@types/nodemailer':
-        specifier: ^6.4.17
-        version: 6.4.22
+        specifier: ^7.0.9
+        version: 7.0.9
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -612,8 +612,8 @@ packages:
   '@types/node@25.2.0':
     resolution: {integrity: sha512-DZ8VwRFUNzuqJ5khrvwMXHmvPe+zGayJhr2CDNiKB1WBE1ST8Djl00D0IC4vvNmHMdj6DlbYRIaFE7WHjlDl5w==}
 
-  '@types/nodemailer@6.4.22':
-    resolution: {integrity: sha512-HV16KRsW7UyZBITE07B62k8PRAKFqRSFXn1T7vslurVjN761tMDBhk5Lbt17ehyTzK6XcyJnAgUpevrvkcVOzw==}
+  '@types/nodemailer@7.0.9':
+    resolution: {integrity: sha512-vI8oF1M+8JvQhsId0Pc38BdUP2evenIIys7c7p+9OZXSPOH5c1dyINP1jT8xQ2xPuBUXmIC87s+91IZMDjH8Ow==}
 
   '@vitest/expect@3.2.4':
     resolution: {integrity: sha512-Io0yyORnB6sikFlt8QW5K7slY4OjqNX9jmJQ02QDda8lyM6B5oNgVWoSoKPac8/kgnCUzuHQKrSLtu/uOqqrig==}
@@ -1676,7 +1676,7 @@ snapshots:
     dependencies:
       undici-types: 7.16.0
 
-  '@types/nodemailer@6.4.22':
+  '@types/nodemailer@7.0.9':
     dependencies:
       '@types/node': 25.2.0
 
