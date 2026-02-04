@@ -11,7 +11,7 @@ export const WebhookActionSchema = z.object({
 export const MailHookActionSchema = z.object({
     type: z.literal('mailHook'),
     instance: z.string().min(1),
-    recipient: z.string().email(),
+    recipient: z.email(),
 });
 
 export const ActionSchema = z.discriminatedUnion('type', [WebhookActionSchema, MailHookActionSchema]);
@@ -42,8 +42,8 @@ export type SmtpServerConfig = z.infer<typeof SmtpServerConfigSchema>;
 export const WebhookConfigSchema = z.object({
     reqUrl: z.string().url(),
     httpMethod: HttpMethodSchema.default('POST'),
-    httpHeaders: z.union([z.record(z.string()), z.array(z.unknown()), z.string(), z.null()]).default(null),
-    httpBody: z.union([z.record(z.unknown()), z.array(z.unknown()), z.string(), z.null()]).default(null),
+    httpHeaders: z.union([z.record(z.string(), z.string()), z.array(z.unknown()), z.string(), z.null()]).default(null),
+    httpBody: z.union([z.record(z.string(), z.unknown()), z.array(z.unknown()), z.string(), z.null()]).default(null),
 });
 
 export type WebhookConfig = z.infer<typeof WebhookConfigSchema>;
@@ -54,8 +54,8 @@ export const ConfigSchema = z
         dockerHubPassword: z.string().optional(),
         checkInterval: z.number().int().positive().default(60),
         notifyServices: z.array(NotifyServiceSchema).min(1),
-        smtpServer: z.record(SmtpServerConfigSchema).optional(),
-        webHooks: z.record(WebhookConfigSchema).optional(),
+        smtpServer: z.record(z.string(), SmtpServerConfigSchema).optional(),
+        webHooks: z.record(z.string(), WebhookConfigSchema).optional(),
     })
     .superRefine((config, ctx) => {
         for (const service of config.notifyServices) {
