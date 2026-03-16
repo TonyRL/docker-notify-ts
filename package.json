@@ -31,7 +31,7 @@
         "@types/nodemailer": "^7.0.11",
         "husky": "^9.1.7",
         "lint-staged": "^16.4.0",
-        "oxfmt": "^0.40.0",
+        "oxfmt": "^0.41.0",
         "oxlint": "^1.56.0",
         "tsdown": "^0.21.2",
         "tsx": "^4.19.4",
