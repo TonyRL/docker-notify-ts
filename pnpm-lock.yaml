@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       got:
-        specifier: ^15.0.1
-        version: 15.0.1
+        specifier: ^15.0.2
+        version: 15.0.2
       jsonc-parser:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1139,8 +1139,8 @@ packages:
   get-tsconfig@4.13.7:
     resolution: {integrity: sha512-7tN6rFgBlMgpBML5j8typ92BKFi2sFQvIdpAqLA2beia5avZDrMs0FLZiM5etShWq5irVyGcGMEA1jcDaK7A/Q==}
 
-  got@15.0.1:
-    resolution: {integrity: sha512-InYCBboAj9YmFiMcxbIRQ/WPoLsKSc9t9EGaUjGENtxunnx8USWtRY/SO/V3VsHLfDvUxAO2Qmx+6fQyG1jjaw==}
+  got@15.0.2:
+    resolution: {integrity: sha512-opPIdoQSTOGqX3h0d8QQoqCX0oF728V1PFxbPqquAFSeWPUOlPQ3Gi6IKIqGm6NMcDl+DWUwQb2RR+xvuEJOQQ==}
     engines: {node: '>=22'}
 
   help-me@5.0.0:
@@ -2344,7 +2344,7 @@ snapshots:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
-  got@15.0.1:
+  got@15.0.2:
     dependencies:
       '@sindresorhus/is': 7.2.0
       byte-counter: 0.1.0
