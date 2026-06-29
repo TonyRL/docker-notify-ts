@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       got:
-        specifier: ^15.0.6
-        version: 15.0.6
+        specifier: ^15.0.7
+        version: 15.0.7
       jsonc-parser:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1252,8 +1252,8 @@ packages:
     resolution: {integrity: sha512-/6gFNr0N04nob252sTQxyFLi3eKFRqIg1I87YcqAMT1i6SQrSF6KujUEQrtrjMV0H/eejTCltLdDSTEMzHbnsQ==}
     engines: {node: '>=20.20.0'}
 
-  got@15.0.6:
-    resolution: {integrity: sha512-6DEiZOte0BMR/QUFlk7CTBtcLpnJx/gAGnmApWtnHvM2i+LssgCaC3Kl3x+SZ/laTbYlmcaabylkwS0t97Y4BA==}
+  got@15.0.7:
+    resolution: {integrity: sha512-HA4XUhL2xk0/sA4l3zRyOzfqPtDEiVYpzDae56WLX2aHZYF6v6hjTnuDvURIdznSTPFYW1JUdlREhZjGAF9LCQ==}
     engines: {node: '>=22'}
 
   help-me@5.0.0:
@@ -2552,7 +2552,7 @@ snapshots:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
-  got@15.0.6:
+  got@15.0.7:
     dependencies:
       '@sindresorhus/is': 8.1.0
       byte-counter: 0.1.0
