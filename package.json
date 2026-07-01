@@ -27,7 +27,7 @@
         "zod": "^4.4.3"
     },
     "devDependencies": {
-        "@types/node": "^26.0.1",
+        "@types/node": "^26.1.0",
         "@types/nodemailer": "^8.0.1",
         "husky": "^9.1.7",
         "lint-staged": "^17.0.8",
