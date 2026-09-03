@@ -19,7 +19,7 @@
         "prepare": "husky"
     },
     "dependencies": {
-        "got": "^15.1.0",
+        "got": "^16.0.0",
         "jsonc-parser": "^3.3.1",
         "nodemailer": "^9.0.6",
         "pino": "^10.3.1",
