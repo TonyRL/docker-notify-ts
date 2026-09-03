@@ -21,7 +21,7 @@
     "dependencies": {
         "got": "^16.0.0",
         "jsonc-parser": "^3.3.1",
-        "nodemailer": "^9.0.6",
+        "nodemailer": "^9.1.0",
         "pino": "^10.3.1",
         "pino-pretty": "^13.0.0",
         "zod": "^4.5.4"
