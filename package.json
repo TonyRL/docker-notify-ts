@@ -24,7 +24,7 @@
         "nodemailer": "^10.1.0",
         "pino": "^10.4.0",
         "pino-pretty": "^13.2.0",
-        "zod": "^4.6.5"
+        "zod": "^4.6.6"
     },
     "devDependencies": {
         "@types/node": "^26.6.5",
